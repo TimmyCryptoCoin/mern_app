@@ -24,8 +24,6 @@ db.once('open', function() {
     console.log(`Connected to mLab ${process.env.MLAB_DB}`)
 });
 
-app.get('/', (req, res) => res.send('Welcome to Mern full stack app!'))
-
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
